@@ -1,0 +1,35 @@
+### Headers settings
+company: victorbogatyrev
+
+### Xcode project settings
+project_name: RevolutTestApp
+xcodeproj_path: RevolutTestApp.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: RevolutTestApp
+
+# The file path for new modules
+project_file_path: RevolutTestApp
+
+# The Xcode group path to new modules
+project_group_path: RevolutTestApp
+
+### Tests generation settings section
+# The tests target name
+test_target: RevolutTestAppTests
+
+# The file path for new tests
+test_file_path: RevolutTestAppTests
+
+# The Xcode group path to new tests
+test_group_path: RevolutTestAppTests
+
+### Dependencies settings section
+podfile_path: 
+
+### Templates
+templates:
+- {name: rviper_controller}
+- {name: mvvm_controller}
+- {name: swifty_viper}

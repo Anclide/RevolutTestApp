@@ -3,17 +3,48 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F3B264A6EF90DE21822DBDF /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B90B9851BCE989EC18B09AD /* MainConfigurator.swift */; };
+		3402A65116E6D867EE17919D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF032D8662191F7C9668ED5 /* MainViewController.swift */; };
+		39B551965D3F57ED48905C75 /* MainInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C48F71876D5BB3B02A9FBDE /* MainInitializer.swift */; };
+		472BB73B3640EDBD1B47638B /* MainModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2F39A31CA6EE33132FEE9E /* MainModuleInput.swift */; };
+		4C57D36779164E951DDD157B /* MainRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE96B4981D9B43B5AC597CE /* MainRouterTests.swift */; };
+		649FFB4F207452CF0AED0DE7 /* MainInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2557C5934E27C5DAABDC51E0 /* MainInteractorInput.swift */; };
+		783284B9DB8F4861FF952BA4 /* MainInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9673409CE249670F07FFE8F8 /* MainInteractorOutput.swift */; };
 		7DD6CAA42153F5C4002C63BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD6CAA32153F5C4002C63BC /* AppDelegate.swift */; };
-		7DD6CAA62153F5C4002C63BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD6CAA52153F5C4002C63BC /* ViewController.swift */; };
-		7DD6CAA92153F5C4002C63BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DD6CAA72153F5C4002C63BC /* Main.storyboard */; };
 		7DD6CAAB2153F5C6002C63BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DD6CAAA2153F5C6002C63BC /* Assets.xcassets */; };
 		7DD6CAAE2153F5C6002C63BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DD6CAAC2153F5C6002C63BC /* LaunchScreen.storyboard */; };
 		7DD6CAB92153F5C7002C63BC /* RevolutTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD6CAB82153F5C7002C63BC /* RevolutTestAppTests.swift */; };
 		7DD6CAC42153F5C7002C63BC /* RevolutTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD6CAC32153F5C7002C63BC /* RevolutTestAppUITests.swift */; };
+		7DD6CADA21542F6A002C63BC /* BaseViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD6CAD921542F6A002C63BC /* BaseViewProtocol.swift */; };
+		7DD6CADE21542FF5002C63BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DD6CADD21542FF5002C63BC /* Main.storyboard */; };
+		7DD6CADF21543321002C63BC /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B90B9851BCE989EC18B09AD /* MainConfigurator.swift */; };
+		7DD6CAE021543348002C63BC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF032D8662191F7C9668ED5 /* MainViewController.swift */; };
+		7DD6CAE121543358002C63BC /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C7898D592E2253C95BA9C /* MainInteractor.swift */; };
+		7DD6CAE22154335D002C63BC /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF96A16B019B7280F3BA53D /* MainPresenter.swift */; };
+		7DD6CAE321543366002C63BC /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BCF65326BAAFC299126E39 /* MainRouter.swift */; };
+		7DD6CAE42154337F002C63BC /* MainInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9673409CE249670F07FFE8F8 /* MainInteractorOutput.swift */; };
+		7DD6CAE52154338A002C63BC /* MainInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2557C5934E27C5DAABDC51E0 /* MainInteractorInput.swift */; };
+		7DD6CAE621543390002C63BC /* MainRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5288988990E5D66FEFCB0AC /* MainRouterInput.swift */; };
+		7DD6CAE721543393002C63BC /* MainViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4103022F6A63476BF04FB0E2 /* MainViewInput.swift */; };
+		7DD6CAE8215433B9002C63BC /* MainViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC9C38D2C2C967EAE8E94B /* MainViewOutput.swift */; };
+		7DD6CAE9215433BD002C63BC /* MainModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2F39A31CA6EE33132FEE9E /* MainModuleInput.swift */; };
+		7DD6CAEE21543592002C63BC /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD6CAEC21543592002C63BC /* CurrencyTableViewCell.swift */; };
+		7DD6CAEF21543592002C63BC /* CurrencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DD6CAED21543592002C63BC /* CurrencyTableViewCell.xib */; };
+		7DD6CAF32154388F002C63BC /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD6CAF22154388F002C63BC /* CustomTextField.swift */; };
+		879670E712A87B06A2E372AB /* MainRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5288988990E5D66FEFCB0AC /* MainRouterInput.swift */; };
+		931DF90BF919F9071CC25094 /* MainInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C491AFB56BFA73BB1CFE15 /* MainInteractorTests.swift */; };
+		A874DB8BC9E28F2FA093F4D8 /* MainViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653F2371690751A9F6942AAA /* MainViewTests.swift */; };
+		A96DB44892A4DBBF44AC9CF4 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BCF65326BAAFC299126E39 /* MainRouter.swift */; };
+		ACE0A005C4DBDA5A3D3A1F0E /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF96A16B019B7280F3BA53D /* MainPresenter.swift */; };
+		BAFB0ED26CEBA1DE69E8ABC8 /* MainConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BE2108996EA99B4B42D26B /* MainConfiguratorTests.swift */; };
+		DCB6ACD198DB4C5B80678270 /* MainViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC9C38D2C2C967EAE8E94B /* MainViewOutput.swift */; };
+		DECA46A542C786C14489D64D /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C7898D592E2253C95BA9C /* MainInteractor.swift */; };
+		F791046D1C631ECC86E72CD9 /* MainPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CDE7708C27C4E58FCCF152 /* MainPresenterTests.swift */; };
+		FD4D03D8120DE98E22FEBB88 /* MainViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4103022F6A63476BF04FB0E2 /* MainViewInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +65,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2557C5934E27C5DAABDC51E0 /* MainInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainInteractorInput.swift; sourceTree = "<group>"; };
+		2EF96A16B019B7280F3BA53D /* MainPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		32BCF65326BAAFC299126E39 /* MainRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		4103022F6A63476BF04FB0E2 /* MainViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewInput.swift; sourceTree = "<group>"; };
+		49C491AFB56BFA73BB1CFE15 /* MainInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainInteractorTests.swift; sourceTree = "<group>"; };
+		653F2371690751A9F6942AAA /* MainViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewTests.swift; sourceTree = "<group>"; };
+		6B90B9851BCE989EC18B09AD /* MainConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainConfigurator.swift; sourceTree = "<group>"; };
 		7DD6CAA02153F5C4002C63BC /* RevolutTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RevolutTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DD6CAA32153F5C4002C63BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7DD6CAA52153F5C4002C63BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7DD6CAA82153F5C4002C63BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7DD6CAAA2153F5C6002C63BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DD6CAAD2153F5C6002C63BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DD6CAAF2153F5C6002C63BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +83,21 @@
 		7DD6CABF2153F5C7002C63BC /* RevolutTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RevolutTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DD6CAC32153F5C7002C63BC /* RevolutTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevolutTestAppUITests.swift; sourceTree = "<group>"; };
 		7DD6CAC52153F5C7002C63BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DD6CAD921542F6A002C63BC /* BaseViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewProtocol.swift; sourceTree = "<group>"; };
+		7DD6CADD21542FF5002C63BC /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7DD6CAEC21543592002C63BC /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		7DD6CAED21543592002C63BC /* CurrencyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyTableViewCell.xib; sourceTree = "<group>"; };
+		7DD6CAF22154388F002C63BC /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		8AE96B4981D9B43B5AC597CE /* MainRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainRouterTests.swift; sourceTree = "<group>"; };
+		9673409CE249670F07FFE8F8 /* MainInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainInteractorOutput.swift; sourceTree = "<group>"; };
+		9C48F71876D5BB3B02A9FBDE /* MainInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainInitializer.swift; sourceTree = "<group>"; };
+		A0CDE7708C27C4E58FCCF152 /* MainPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainPresenterTests.swift; sourceTree = "<group>"; };
+		AB2F39A31CA6EE33132FEE9E /* MainModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainModuleInput.swift; sourceTree = "<group>"; };
+		C5BE2108996EA99B4B42D26B /* MainConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainConfiguratorTests.swift; sourceTree = "<group>"; };
+		CCBC9C38D2C2C967EAE8E94B /* MainViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewOutput.swift; sourceTree = "<group>"; };
+		D5288988990E5D66FEFCB0AC /* MainRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainRouterInput.swift; sourceTree = "<group>"; };
+		DFF032D8662191F7C9668ED5 /* MainViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		EB1C7898D592E2253C95BA9C /* MainInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +125,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		072AD5D64E3EA2FBD36D4224 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AB2F39A31CA6EE33132FEE9E /* MainModuleInput.swift */,
+				2EF96A16B019B7280F3BA53D /* MainPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2028E5FF25547E22BB60EC2C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8AE96B4981D9B43B5AC597CE /* MainRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		32B368AA807ACE572F1AC104 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				6B90B9851BCE989EC18B09AD /* MainConfigurator.swift */,
+				9C48F71876D5BB3B02A9FBDE /* MainInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		34A010A82D770D10FCACA58C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7DD6CADC21542FE7002C63BC /* Storyboard */,
+				4103022F6A63476BF04FB0E2 /* MainViewInput.swift */,
+				CCBC9C38D2C2C967EAE8E94B /* MainViewOutput.swift */,
+				DFF032D8662191F7C9668ED5 /* MainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3F184B83459E946B33C29568 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				34A010A82D770D10FCACA58C /* View */,
+				072AD5D64E3EA2FBD36D4224 /* Presenter */,
+				DD1B742CA73EA677FD58B34F /* Interactor */,
+				C9D4971314139B7EE4FC13B8 /* Router */,
+				32B368AA807ACE572F1AC104 /* Configurator */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4393C5C2390E703820FBA43C /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				C5BE2108996EA99B4B42D26B /* MainConfiguratorTests.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
 		7DD6CA972153F5C4002C63BC = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +205,12 @@
 		7DD6CAA22153F5C4002C63BC /* RevolutTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				7DD6CAD521542EC6002C63BC /* Base */,
+				3F184B83459E946B33C29568 /* Main */,
+				7DD6CAF02154385A002C63BC /* Views */,
+				7DD6CAD421542DE5002C63BC /* Misc */,
+				7DD6CAD221542DAA002C63BC /* Supporting Files */,
 				7DD6CAA32153F5C4002C63BC /* AppDelegate.swift */,
-				7DD6CAA52153F5C4002C63BC /* ViewController.swift */,
-				7DD6CAA72153F5C4002C63BC /* Main.storyboard */,
-				7DD6CAAA2153F5C6002C63BC /* Assets.xcassets */,
-				7DD6CAAC2153F5C6002C63BC /* LaunchScreen.storyboard */,
-				7DD6CAAF2153F5C6002C63BC /* Info.plist */,
 			);
 			path = RevolutTestApp;
 			sourceTree = "<group>";
@@ -112,6 +220,7 @@
 			children = (
 				7DD6CAB82153F5C7002C63BC /* RevolutTestAppTests.swift */,
 				7DD6CABA2153F5C7002C63BC /* Info.plist */,
+				D4B7C44891C8F6F95EFFBB82 /* Main */,
 			);
 			path = RevolutTestAppTests;
 			sourceTree = "<group>";
@@ -123,6 +232,136 @@
 				7DD6CAC52153F5C7002C63BC /* Info.plist */,
 			);
 			path = RevolutTestAppUITests;
+			sourceTree = "<group>";
+		};
+		7DD6CAD221542DAA002C63BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7DD6CAAF2153F5C6002C63BC /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7DD6CAD421542DE5002C63BC /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				7DD6CAAC2153F5C6002C63BC /* LaunchScreen.storyboard */,
+				7DD6CAAA2153F5C6002C63BC /* Assets.xcassets */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		7DD6CAD521542EC6002C63BC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7DD6CADB21542FD9002C63BC /* Protocols */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		7DD6CADB21542FD9002C63BC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7DD6CAD921542F6A002C63BC /* BaseViewProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		7DD6CADC21542FE7002C63BC /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				7DD6CADD21542FF5002C63BC /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		7DD6CAEA21543562002C63BC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7DD6CAEB2154356B002C63BC /* CurrencyCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		7DD6CAEB2154356B002C63BC /* CurrencyCell */ = {
+			isa = PBXGroup;
+			children = (
+				7DD6CAEC21543592002C63BC /* CurrencyTableViewCell.swift */,
+				7DD6CAED21543592002C63BC /* CurrencyTableViewCell.xib */,
+			);
+			path = CurrencyCell;
+			sourceTree = "<group>";
+		};
+		7DD6CAF02154385A002C63BC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7DD6CAF12154386E002C63BC /* CustomTextField */,
+				7DD6CAEA21543562002C63BC /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7DD6CAF12154386E002C63BC /* CustomTextField */ = {
+			isa = PBXGroup;
+			children = (
+				7DD6CAF22154388F002C63BC /* CustomTextField.swift */,
+			);
+			path = CustomTextField;
+			sourceTree = "<group>";
+		};
+		8BAFA09DA1D89988747B7BEB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A0CDE7708C27C4E58FCCF152 /* MainPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C4475746E146A1B71636292C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				653F2371690751A9F6942AAA /* MainViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C9D4971314139B7EE4FC13B8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D5288988990E5D66FEFCB0AC /* MainRouterInput.swift */,
+				32BCF65326BAAFC299126E39 /* MainRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D4B7C44891C8F6F95EFFBB82 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4393C5C2390E703820FBA43C /* Configurator */,
+				C4475746E146A1B71636292C /* View */,
+				FB1C556E28CD7472766C7B7A /* Interactor */,
+				8BAFA09DA1D89988747B7BEB /* Presenter */,
+				2028E5FF25547E22BB60EC2C /* Router */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DD1B742CA73EA677FD58B34F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2557C5934E27C5DAABDC51E0 /* MainInteractorInput.swift */,
+				9673409CE249670F07FFE8F8 /* MainInteractorOutput.swift */,
+				EB1C7898D592E2253C95BA9C /* MainInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FB1C556E28CD7472766C7B7A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				49C491AFB56BFA73BB1CFE15 /* MainInteractorTests.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,19 +432,22 @@
 				TargetAttributes = {
 					7DD6CA9F2153F5C4002C63BC = {
 						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
 					};
 					7DD6CAB32153F5C7002C63BC = {
 						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 7DD6CA9F2153F5C4002C63BC;
 					};
 					7DD6CABE2153F5C7002C63BC = {
 						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 7DD6CA9F2153F5C4002C63BC;
 					};
 				};
 			};
 			buildConfigurationList = 7DD6CA9B2153F5C4002C63BC /* Build configuration list for PBXProject "RevolutTestApp" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -229,9 +471,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DD6CAEF21543592002C63BC /* CurrencyTableViewCell.xib in Resources */,
+				7DD6CADE21542FF5002C63BC /* Main.storyboard in Resources */,
 				7DD6CAAE2153F5C6002C63BC /* LaunchScreen.storyboard in Resources */,
 				7DD6CAAB2153F5C6002C63BC /* Assets.xcassets in Resources */,
-				7DD6CAA92153F5C4002C63BC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +499,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DD6CAA62153F5C4002C63BC /* ViewController.swift in Sources */,
 				7DD6CAA42153F5C4002C63BC /* AppDelegate.swift in Sources */,
+				FD4D03D8120DE98E22FEBB88 /* MainViewInput.swift in Sources */,
+				DCB6ACD198DB4C5B80678270 /* MainViewOutput.swift in Sources */,
+				3402A65116E6D867EE17919D /* MainViewController.swift in Sources */,
+				7DD6CAF32154388F002C63BC /* CustomTextField.swift in Sources */,
+				472BB73B3640EDBD1B47638B /* MainModuleInput.swift in Sources */,
+				ACE0A005C4DBDA5A3D3A1F0E /* MainPresenter.swift in Sources */,
+				649FFB4F207452CF0AED0DE7 /* MainInteractorInput.swift in Sources */,
+				783284B9DB8F4861FF952BA4 /* MainInteractorOutput.swift in Sources */,
+				7DD6CADA21542F6A002C63BC /* BaseViewProtocol.swift in Sources */,
+				DECA46A542C786C14489D64D /* MainInteractor.swift in Sources */,
+				879670E712A87B06A2E372AB /* MainRouterInput.swift in Sources */,
+				A96DB44892A4DBBF44AC9CF4 /* MainRouter.swift in Sources */,
+				1F3B264A6EF90DE21822DBDF /* MainConfigurator.swift in Sources */,
+				7DD6CAEE21543592002C63BC /* CurrencyTableViewCell.swift in Sources */,
+				39B551965D3F57ED48905C75 /* MainInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +522,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DD6CAE8215433B9002C63BC /* MainViewOutput.swift in Sources */,
+				7DD6CAE621543390002C63BC /* MainRouterInput.swift in Sources */,
 				7DD6CAB92153F5C7002C63BC /* RevolutTestAppTests.swift in Sources */,
+				BAFB0ED26CEBA1DE69E8ABC8 /* MainConfiguratorTests.swift in Sources */,
+				7DD6CAE42154337F002C63BC /* MainInteractorOutput.swift in Sources */,
+				7DD6CAE52154338A002C63BC /* MainInteractorInput.swift in Sources */,
+				A874DB8BC9E28F2FA093F4D8 /* MainViewTests.swift in Sources */,
+				931DF90BF919F9071CC25094 /* MainInteractorTests.swift in Sources */,
+				7DD6CADF21543321002C63BC /* MainConfigurator.swift in Sources */,
+				7DD6CAE22154335D002C63BC /* MainPresenter.swift in Sources */,
+				7DD6CAE121543358002C63BC /* MainInteractor.swift in Sources */,
+				F791046D1C631ECC86E72CD9 /* MainPresenterTests.swift in Sources */,
+				7DD6CAE721543393002C63BC /* MainViewInput.swift in Sources */,
+				4C57D36779164E951DDD157B /* MainRouterTests.swift in Sources */,
+				7DD6CAE321543366002C63BC /* MainRouter.swift in Sources */,
+				7DD6CAE9215433BD002C63BC /* MainModuleInput.swift in Sources */,
+				7DD6CAE021543348002C63BC /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +566,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7DD6CAA72153F5C4002C63BC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7DD6CAA82153F5C4002C63BC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7DD6CAAC2153F5C6002C63BC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -422,8 +687,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -434,15 +698,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KW8XLSK27E;
-				INFOPLIST_FILE = RevolutTestApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				INFOPLIST_FILE = "$(SRCROOT)/RevolutTestApp/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.victorbogatyrev.RevolutTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -452,15 +714,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KW8XLSK27E;
-				INFOPLIST_FILE = RevolutTestApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				INFOPLIST_FILE = "$(SRCROOT)/RevolutTestApp/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.victorbogatyrev.RevolutTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -472,11 +732,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KW8XLSK27E;
 				INFOPLIST_FILE = RevolutTestAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.victorbogatyrev.RevolutTestAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -493,11 +749,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KW8XLSK27E;
 				INFOPLIST_FILE = RevolutTestAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.victorbogatyrev.RevolutTestAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -513,11 +765,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KW8XLSK27E;
 				INFOPLIST_FILE = RevolutTestAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.victorbogatyrev.RevolutTestAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -533,11 +781,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KW8XLSK27E;
 				INFOPLIST_FILE = RevolutTestAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.victorbogatyrev.RevolutTestAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
