@@ -19,5 +19,26 @@ class MainViewTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
+  
+  func testBindingCollections() {
+    let viewController = MainViewControllerMock()
+    let configurator = MainModuleConfigurator()
+    
+    configurator.configureModuleForViewInput(viewInput: viewController)
+
+    
+    XCTAssertNotNil(viewController.tableView.delegate, "tableViewDelegate is nil after binding")
+  }
+  
+  
+  class MainViewControllerMock: MainViewController {
+    
+    var setupInitialStateDidCall = false
+    
+    override func setupInitialState(viewModel: MainViewModel) {
+      setupInitialStateDidCall = true
+    }
+    
+  }
 
 }

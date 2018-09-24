@@ -43,6 +43,17 @@
 		7DD6CB0A2159078B002C63BC /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD6CB092159078B002C63BC /* Events.swift */; };
 		7DD6CB0C21590AB5002C63BC /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD6CB0B21590AB5002C63BC /* Error.swift */; };
 		7DD6CB0E21592FB4002C63BC /* Double+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD6CB0D21592FB4002C63BC /* Double+Rounding.swift */; };
+		7DD6CB0F2159444F002C63BC /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD6CB02215902F0002C63BC /* MainViewModel.swift */; };
+		7DD6CB1021594511002C63BC /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD6CB042159036F002C63BC /* CurrencyModel.swift */; };
+		7DD6CB112159451B002C63BC /* CollectionViewOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD6CAFF21585D50002C63BC /* CollectionViewOwner.swift */; };
+		7DD6CB12215945B4002C63BC /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD6CB092159078B002C63BC /* Events.swift */; };
+		7DD6CB13215945CA002C63BC /* TableViewMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD6CAFD21585C0E002C63BC /* TableViewMaker.swift */; };
+		7DD6CB14215945D3002C63BC /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD6CAEC21543592002C63BC /* CurrencyTableViewCell.swift */; };
+		7DD6CB15215945DD002C63BC /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD6CB07215906A9002C63BC /* Request.swift */; };
+		7DD6CB1621594619002C63BC /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD6CB0B21590AB5002C63BC /* Error.swift */; };
+		7DD6CB17215946C0002C63BC /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD6CAF22154388F002C63BC /* CustomTextField.swift */; };
+		7DD6CB18215946DC002C63BC /* Double+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD6CB0D21592FB4002C63BC /* Double+Rounding.swift */; };
+		7DD6CB1B2159473C002C63BC /* TableViewMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD6CB1A2159473C002C63BC /* TableViewMakerTests.swift */; };
 		879670E712A87B06A2E372AB /* MainRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5288988990E5D66FEFCB0AC /* MainRouterInput.swift */; };
 		931DF90BF919F9071CC25094 /* MainInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C491AFB56BFA73BB1CFE15 /* MainInteractorTests.swift */; };
 		A874DB8BC9E28F2FA093F4D8 /* MainViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653F2371690751A9F6942AAA /* MainViewTests.swift */; };
@@ -104,6 +115,7 @@
 		7DD6CB092159078B002C63BC /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
 		7DD6CB0B21590AB5002C63BC /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		7DD6CB0D21592FB4002C63BC /* Double+Rounding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Rounding.swift"; sourceTree = "<group>"; };
+		7DD6CB1A2159473C002C63BC /* TableViewMakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewMakerTests.swift; sourceTree = "<group>"; };
 		8AE96B4981D9B43B5AC597CE /* MainRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainRouterTests.swift; sourceTree = "<group>"; };
 		9673409CE249670F07FFE8F8 /* MainInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainInteractorOutput.swift; sourceTree = "<group>"; };
 		9C48F71876D5BB3B02A9FBDE /* MainInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainInitializer.swift; sourceTree = "<group>"; };
@@ -357,6 +369,14 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		7DD6CB1921594715002C63BC /* TableViewMaker */ = {
+			isa = PBXGroup;
+			children = (
+				7DD6CB1A2159473C002C63BC /* TableViewMakerTests.swift */,
+			);
+			path = TableViewMaker;
+			sourceTree = "<group>";
+		};
 		8BAFA09DA1D89988747B7BEB /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -385,6 +405,7 @@
 		D4B7C44891C8F6F95EFFBB82 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				7DD6CB1921594715002C63BC /* TableViewMaker */,
 				4393C5C2390E703820FBA43C /* Configurator */,
 				C4475746E146A1B71636292C /* View */,
 				FB1C556E28CD7472766C7B7A /* Interactor */,
@@ -578,23 +599,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DD6CB17215946C0002C63BC /* CustomTextField.swift in Sources */,
 				7DD6CAE8215433B9002C63BC /* MainViewOutput.swift in Sources */,
+				7DD6CB15215945DD002C63BC /* Request.swift in Sources */,
 				7DD6CAE621543390002C63BC /* MainRouterInput.swift in Sources */,
 				7DD6CAB92153F5C7002C63BC /* RevolutTestAppTests.swift in Sources */,
 				BAFB0ED26CEBA1DE69E8ABC8 /* MainConfiguratorTests.swift in Sources */,
 				7DD6CAE42154337F002C63BC /* MainInteractorOutput.swift in Sources */,
 				7DD6CAE52154338A002C63BC /* MainInteractorInput.swift in Sources */,
+				7DD6CB112159451B002C63BC /* CollectionViewOwner.swift in Sources */,
 				A874DB8BC9E28F2FA093F4D8 /* MainViewTests.swift in Sources */,
+				7DD6CB1B2159473C002C63BC /* TableViewMakerTests.swift in Sources */,
 				931DF90BF919F9071CC25094 /* MainInteractorTests.swift in Sources */,
 				7DD6CADF21543321002C63BC /* MainConfigurator.swift in Sources */,
 				7DD6CAE22154335D002C63BC /* MainPresenter.swift in Sources */,
 				7DD6CAE121543358002C63BC /* MainInteractor.swift in Sources */,
 				F791046D1C631ECC86E72CD9 /* MainPresenterTests.swift in Sources */,
 				7DD6CAE721543393002C63BC /* MainViewInput.swift in Sources */,
+				7DD6CB13215945CA002C63BC /* TableViewMaker.swift in Sources */,
 				4C57D36779164E951DDD157B /* MainRouterTests.swift in Sources */,
 				7DD6CAE321543366002C63BC /* MainRouter.swift in Sources */,
 				7DD6CAE9215433BD002C63BC /* MainModuleInput.swift in Sources */,
 				7DD6CAE021543348002C63BC /* MainViewController.swift in Sources */,
+				7DD6CB18215946DC002C63BC /* Double+Rounding.swift in Sources */,
+				7DD6CB12215945B4002C63BC /* Events.swift in Sources */,
+				7DD6CB0F2159444F002C63BC /* MainViewModel.swift in Sources */,
+				7DD6CB14215945D3002C63BC /* CurrencyTableViewCell.swift in Sources */,
+				7DD6CB1621594619002C63BC /* Error.swift in Sources */,
+				7DD6CB1021594511002C63BC /* CurrencyModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

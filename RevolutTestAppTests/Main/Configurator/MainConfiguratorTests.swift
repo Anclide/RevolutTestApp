@@ -33,6 +33,10 @@ class MainModuleConfiguratorTests: XCTestCase {
         //then
         XCTAssertNotNil(viewController.output, "MainViewController is nil after configuration")
         XCTAssertTrue(viewController.output is MainPresenter, "output is not MainPresenter")
+        XCTAssertNotNil(viewController.tableViewMaker, "tableViewMaker is nil after configuration")
+      
+        let tableViewMaker: TableViewMaker = viewController.tableViewMaker
+        XCTAssertNotNil(tableViewMaker.collectionViewOwner, "collectionViewOwner is nil after configuration")
 
         let presenter: MainPresenter = viewController.output as! MainPresenter
         XCTAssertNotNil(presenter.view, "view in MainPresenter is nil after configuration")
@@ -47,8 +51,9 @@ class MainModuleConfiguratorTests: XCTestCase {
 
         var setupInitialStateDidCall = false
 
-        override func setupInitialState() {
+        override func setupInitialState(viewModel: MainViewModel) {
             setupInitialStateDidCall = true
         }
+      
     }
 }

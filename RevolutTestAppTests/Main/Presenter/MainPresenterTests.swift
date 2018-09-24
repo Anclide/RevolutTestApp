@@ -19,8 +19,24 @@ class MainPresenterTest: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
+  
+  func testData() {
+    
+  }
 
-    class MockInteractor: MainInteractorInput {
+  class MockInteractor: MainInteractorInput {
+    func prepareData() {
+      
+    }
+    
+    func updateValue(value: Double) {
+      
+    }
+    
+    func updateBaseCurrency(model: CurrencyModel) {
+      
+    }
+    
 
     }
 
@@ -28,10 +44,16 @@ class MainPresenterTest: XCTestCase {
 
     }
 
-    class MockViewController: MainViewInput {
-
-        func setupInitialState() {
-
-        }
+  class MockViewController: MainViewInput {
+    func setupInitialState(viewModel: MainViewModel) {
+      
+    }
+    
+    func updateViewModel(viewModel: MainViewModel) {
+      
+    }
+    
+    var viewModel: Any?
+    
     }
 }
