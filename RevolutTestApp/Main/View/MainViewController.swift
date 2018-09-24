@@ -15,6 +15,8 @@ class MainViewController: UIViewController, MainViewInput {
     var viewModel: Any?
   
     @IBOutlet weak var tableView: UITableView!
+  
+  @IBOutlet weak var tableViewBottomConstraint: NSLayoutConstraint!
 
     // MARK: Life cycle
     override func viewDidLoad() {
@@ -22,6 +24,44 @@ class MainViewController: UIViewController, MainViewInput {
         bindCollections()
         output.viewIsReady()
     }
+  
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        NotificationCenter.default.addObserver(self, selector: #selector(onKeyboardChangeFrame(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+    }
+  
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        NotificationCenter.default.removeObserver(self)
+    }
+  
+  
+    @objc func onKeyboardChangeFrame(notification: Notification) {
+        if let userInfo = notification.userInfo {
+            let endFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
+            let duration:TimeInterval = (userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue ?? 0
+            let animationCurveRawNSN = userInfo[UIResponder.keyboardAnimationCurveUserInfoKey] as? NSNumber
+            let animationCurveRaw = animationCurveRawNSN?.uintValue ?? UIView.AnimationOptions.curveEaseInOut.rawValue
+            let animationCurve: UIView.AnimationOptions = UIView.AnimationOptions(rawValue: animationCurveRaw)
+            if (endFrame?.origin.y)! >= UIScreen.main.bounds.size.height {
+              //setup init constraints
+                self.tableViewBottomConstraint.constant = 0.0
+              } else {
+              //setup new constraints
+              self.tableViewBottomConstraint.constant = endFrame?.size.height ?? 0.0
+            }
+            UIView.animate(withDuration: duration,
+                           delay: TimeInterval(0),
+                           options: animationCurve,
+                           animations: {
+                      
+                            self.view.layoutIfNeeded()
+            },
+                           completion: nil)
+      }
+  }
+  
+  
 
 
     // MARK: MainViewInput
