@@ -16,7 +16,7 @@ class MainViewController: UIViewController, MainViewInput {
   
     @IBOutlet weak var tableView: UITableView!
   
-  @IBOutlet weak var tableViewBottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var tableViewBottomConstraint: NSLayoutConstraint!
 
     // MARK: Life cycle
     override func viewDidLoad() {
@@ -44,18 +44,17 @@ class MainViewController: UIViewController, MainViewInput {
             let animationCurveRaw = animationCurveRawNSN?.uintValue ?? UIView.AnimationOptions.curveEaseInOut.rawValue
             let animationCurve: UIView.AnimationOptions = UIView.AnimationOptions(rawValue: animationCurveRaw)
             if (endFrame?.origin.y)! >= UIScreen.main.bounds.size.height {
-              //setup init constraints
+                //setup init constraints
                 self.tableViewBottomConstraint.constant = 0.0
-              } else {
-              //setup new constraints
-              self.tableViewBottomConstraint.constant = endFrame?.size.height ?? 0.0
+            } else {
+                //setup new constraints
+                self.tableViewBottomConstraint.constant = endFrame?.size.height ?? 0.0
             }
             UIView.animate(withDuration: duration,
                            delay: TimeInterval(0),
                            options: animationCurve,
                            animations: {
-                      
-                            self.view.layoutIfNeeded()
+                              self.view.layoutIfNeeded()
             },
                            completion: nil)
       }
@@ -68,7 +67,7 @@ class MainViewController: UIViewController, MainViewInput {
     func setupInitialState(viewModel: MainViewModel) {
         self.viewModel = viewModel
         DispatchQueue.main.async { [weak self] in
-          self?.tableView.reloadData()
+            self?.tableView.reloadData()
       }
     }
   
@@ -84,6 +83,9 @@ class MainViewController: UIViewController, MainViewInput {
         tableView.delegate = tableViewMaker
         tableViewMaker.onValueChanged = { [weak self] (newValue) in
             self?.output.valueChanged(value: newValue)
+        }
+        tableViewMaker.onSelected = { [weak self] (model) in
+          self?.output.handleNewBaseCurrencySelection(model: model)
         }
     }
 }

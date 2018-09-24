@@ -85,7 +85,7 @@ class Request: NSObject {
       completedURL.removeLast(1)
     }
     
-    httpGet(url, headers: headers, completionHandler: completionHandler)
+    httpGet(completedURL, headers: headers, completionHandler: completionHandler)
   }
   
   

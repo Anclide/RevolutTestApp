@@ -11,4 +11,5 @@ import Foundation
 protocol MainInteractorInput {
   func prepareData()
   func updateValue(value: Double)
+  func updateBaseCurrency(model: CurrencyModel)
 }

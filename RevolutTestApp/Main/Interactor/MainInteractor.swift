@@ -34,14 +34,13 @@ class MainInteractor: MainInteractorInput {
   @objc func onRequestSuccessEvent(notification: Notification) {
     guard let data = notification.userInfo else { return }
     guard let rates = data["rates"] as? [String : Double] else { return }
-    guard let newBase = data["base"] as? String else { return }
     
-    baseCurrency = newBase
     var currencies = [CurrencyModel]()
-    currencies.append(CurrencyModel(name: baseCurrency, multiplier: baseValue, isBase: true))
     for (key, value) in rates {
       currencies.append(CurrencyModel(name: key, multiplier: value * baseValue, isBase: false))
     }
+    currencies.sort(by: { $0.name < $1.name })
+    currencies.insert(CurrencyModel(name: baseCurrency, multiplier: baseValue, isBase: true), at: 0)
     let viewModel = MainViewModel(currencies: currencies)
     
     if isInitial {
@@ -54,6 +53,11 @@ class MainInteractor: MainInteractorInput {
   
   func updateValue(value: Double) {
     self.baseValue = value
+  }
+  
+  func updateBaseCurrency(model: CurrencyModel) {
+    self.baseValue = model.multiplier
+    self.baseCurrency = model.name
   }
   
   @objc func onRequestFailureEvent(notification: Notification) {

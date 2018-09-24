@@ -15,7 +15,7 @@ class CurrencyTableViewCell: UITableViewCell, UITextFieldDelegate {
     @IBOutlet private weak var currencyNameLabel: UILabel!
     @IBOutlet private weak var inputTextField: CustomTextField!
   
-    private var model: CurrencyModel?
+    var isBase = false
   
     var onValueChanged: ((_ value: Double)->())?
   
@@ -37,7 +37,7 @@ class CurrencyTableViewCell: UITableViewCell, UITextFieldDelegate {
   
     func configureCell(data: Any?) {
         guard let model = data as? CurrencyModel else { return }
-        self.model = model
+        self.isBase = model.isBase
       DispatchQueue.main.async { [weak self] in
         self?.currencyAbbreviationLabel.text = model.name
         self?.inputTextField.text = "\(model.multiplier.rounded(toPlaces: 2))"
@@ -50,8 +50,7 @@ class CurrencyTableViewCell: UITableViewCell, UITextFieldDelegate {
     }
   
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        guard let inputModel = model else { return false }
-        if inputModel.isBase {
+        if isBase {
             return true
         } else {
             return false

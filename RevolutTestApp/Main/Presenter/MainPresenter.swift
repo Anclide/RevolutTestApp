@@ -13,11 +13,15 @@ class MainPresenter: MainModuleInput, MainViewOutput, MainInteractorOutput {
     var router: MainRouterInput!
 
     func viewIsReady() {
-      interactor.prepareData()
+        interactor.prepareData()
     }
   
     func valueChanged(value: Double) {
         interactor.updateValue(value: value)
+    }
+  
+    func handleNewBaseCurrencySelection(model: CurrencyModel) {
+        interactor.updateBaseCurrency(model: model)
     }
   
     func setupOnlaunch(viewModel: MainViewModel) {
