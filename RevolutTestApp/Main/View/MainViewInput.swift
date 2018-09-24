@@ -6,12 +6,14 @@
 //  Copyright © 2018 victorbogatyrev. All rights reserved.
 //
 
-protocol MainViewInput: class {
+protocol MainViewInput: class, CollectionViewOwner {
 
     /**
         @author victorbogatyrev
         Setup initial state of the view
     */
 
-    func setupInitialState()
+    func setupInitialState(viewModel: MainViewModel)
+  
+    func updateViewModel(viewModel: MainViewModel)
 }

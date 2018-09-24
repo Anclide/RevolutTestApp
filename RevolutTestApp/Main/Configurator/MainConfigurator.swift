@@ -30,6 +30,10 @@ class MainModuleConfigurator {
 
         presenter.interactor = interactor
         viewController.output = presenter
+      
+        let tableViewMaker = TableViewMaker()
+        tableViewMaker.collectionViewOwner = viewController
+        viewController.tableViewMaker = tableViewMaker
     }
 
 }

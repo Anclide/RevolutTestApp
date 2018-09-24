@@ -9,6 +9,15 @@
 import UIKit
 
 class CurrencyTableViewCell: UITableViewCell {
+  
+    @IBOutlet private weak var countryImageView: UIImageView!
+    @IBOutlet private weak var currencyAbbreviationLabel: UILabel!
+    @IBOutlet private weak var currencyNameLabel: UILabel!
+    @IBOutlet private weak var inputTextField: CustomTextField!
+  
+    static var reuseIdentifier: String {
+        return NSStringFromClass(self).components(separatedBy: ".").last!
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,5 +29,11 @@ class CurrencyTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+  
+    func configureCell(data: Any?) {
+        guard let model = data as? CurrencyModel else { return }
+        currencyAbbreviationLabel.text = model.name
+    }
+  
     
 }

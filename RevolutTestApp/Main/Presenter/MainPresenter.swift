@@ -13,6 +13,14 @@ class MainPresenter: MainModuleInput, MainViewOutput, MainInteractorOutput {
     var router: MainRouterInput!
 
     func viewIsReady() {
-
+      interactor.prepareData()
+    }
+  
+    func setupOnlaunch(viewModel: MainViewModel) {
+        view.setupInitialState(viewModel: viewModel)
+    }
+  
+    func viewModelPrepared(viewModel: MainViewModel) {
+        view.updateViewModel(viewModel: viewModel)
     }
 }

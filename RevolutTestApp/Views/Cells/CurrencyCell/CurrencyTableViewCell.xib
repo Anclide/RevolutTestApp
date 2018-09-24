@@ -26,30 +26,33 @@
                         </constraints>
                     </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="riV-YO-Rhy">
-                        <rect key="frame" x="76.5" y="22" width="228.5" height="41"/>
+                        <rect key="frame" x="76.5" y="23.5" width="228.5" height="37.5"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwR-vf-yPI">
-                                <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwR-vf-yPI">
+                                <rect key="frame" x="0.0" y="0.0" width="43" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPv-cc-edx">
-                                <rect key="frame" x="0.0" y="20.5" width="42" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPv-cc-edx">
+                                <rect key="frame" x="0.0" y="20.5" width="35.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37.5" id="BtB-dC-bhg"/>
+                        </constraints>
                     </stackView>
-                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nJa-9d-5xj" customClass="CustomTextField" customModule="RevolutTestApp" customModuleProvider="target">
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nJa-9d-5xj" customClass="CustomTextField" customModule="RevolutTestApp" customModuleProvider="target">
                         <rect key="frame" x="313" y="22.5" width="100" height="40"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="40" id="2O6-mr-drQ"/>
                             <constraint firstAttribute="width" constant="100" id="Ypc-uK-ymB"/>
                         </constraints>
                         <nil key="textColor"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                     </textField>
                 </subviews>
@@ -65,6 +68,12 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="countryImageView" destination="chV-IW-dJQ" id="exE-Nh-0xz"/>
+                <outlet property="currencyAbbreviationLabel" destination="SwR-vf-yPI" id="xHe-on-5J3"/>
+                <outlet property="currencyNameLabel" destination="dPv-cc-edx" id="v1u-JA-Xit"/>
+                <outlet property="inputTextField" destination="nJa-9d-5xj" id="reu-ZJ-B9y"/>
+            </connections>
             <point key="canvasLocation" x="104.8" y="129.08545727136433"/>
         </tableViewCell>
     </objects>

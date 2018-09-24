@@ -9,5 +9,5 @@
 import Foundation
 
 protocol MainInteractorInput {
-
+  func prepareData()
 }

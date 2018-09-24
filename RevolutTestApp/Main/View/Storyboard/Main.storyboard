@@ -32,6 +32,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8TY-vf-4Yp"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="4Ud-DD-wNv" id="5Xj-dG-L5c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NKA-Qc-9Y4" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="uyv-8C-7YX" customClass="MainModuleInitializer" customModule="RevolutTestApp" customModuleProvider="target">

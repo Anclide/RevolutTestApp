@@ -23,6 +23,7 @@ class CustomTextField: UITextField {
   override func awakeFromNib() {
     super.awakeFromNib()
     bottomLine = UIView(frame: CGRect(x: 0, y: bounds.height - 1, width: bounds.width, height: 1))
+    bottomLine.backgroundColor = UIColor.gray
     addSubview(bottomLine)
   }
 

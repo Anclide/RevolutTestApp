@@ -9,5 +9,6 @@
 import Foundation
 
 protocol MainInteractorOutput: class {
-
+  func viewModelPrepared(viewModel: MainViewModel)
+  func setupOnlaunch(viewModel: MainViewModel)
 }
