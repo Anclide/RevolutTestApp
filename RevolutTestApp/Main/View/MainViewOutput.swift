@@ -14,4 +14,6 @@ protocol MainViewOutput {
     */
 
     func viewIsReady()
+  
+    func valueChanged(value: Double)
 }

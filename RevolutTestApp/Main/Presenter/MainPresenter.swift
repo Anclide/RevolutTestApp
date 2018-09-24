@@ -16,6 +16,10 @@ class MainPresenter: MainModuleInput, MainViewOutput, MainInteractorOutput {
       interactor.prepareData()
     }
   
+    func valueChanged(value: Double) {
+        interactor.updateValue(value: value)
+    }
+  
     func setupOnlaunch(viewModel: MainViewModel) {
         view.setupInitialState(viewModel: viewModel)
     }

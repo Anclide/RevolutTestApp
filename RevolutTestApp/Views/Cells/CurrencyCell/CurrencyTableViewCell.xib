@@ -54,6 +54,9 @@
                         <nil key="textColor"/>
                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        <connections>
+                            <action selector="textDidChange:" destination="KGk-i7-Jjw" eventType="editingChanged" id="sJD-QN-eMg"/>
+                        </connections>
                     </textField>
                 </subviews>
                 <constraints>

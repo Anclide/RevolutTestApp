@@ -9,13 +9,14 @@ import Foundation
 
 class MainInteractor: MainInteractorInput {
 
-    weak var output: MainInteractorOutput!
-  
-  var baseCurrency = "EUR"
-  
-  var isInitial = true
+  weak var output: MainInteractorOutput!
   
   var timer: Timer?
+  
+  var baseCurrency = "EUR"
+  var isInitial = true
+  var baseValue: Double = 100.0
+  
   
   init() {
     NotificationCenter.default.addObserver(self, selector: #selector(onRequestSuccessEvent(notification:)), name: Notification.Name(rawValue: Events.APIGETCurrenciesSuccessEvent.rawValue), object: nil)
@@ -33,10 +34,13 @@ class MainInteractor: MainInteractorInput {
   @objc func onRequestSuccessEvent(notification: Notification) {
     guard let data = notification.userInfo else { return }
     guard let rates = data["rates"] as? [String : Double] else { return }
+    guard let newBase = data["base"] as? String else { return }
+    
+    baseCurrency = newBase
     var currencies = [CurrencyModel]()
-    currencies.append(CurrencyModel(name: baseCurrency, multiplier: 1.0))
+    currencies.append(CurrencyModel(name: baseCurrency, multiplier: baseValue, isBase: true))
     for (key, value) in rates {
-      currencies.append(CurrencyModel(name: key, multiplier: value))
+      currencies.append(CurrencyModel(name: key, multiplier: value * baseValue, isBase: false))
     }
     let viewModel = MainViewModel(currencies: currencies)
     
@@ -48,8 +52,12 @@ class MainInteractor: MainInteractorInput {
     }
   }
   
+  func updateValue(value: Double) {
+    self.baseValue = value
+  }
+  
   @objc func onRequestFailureEvent(notification: Notification) {
-    
+    timer?.invalidate()
   }
   
   func prepareData() {

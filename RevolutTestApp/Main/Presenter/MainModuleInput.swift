@@ -7,5 +7,5 @@
 //
 
 protocol MainModuleInput: class {
-  
+    
 }

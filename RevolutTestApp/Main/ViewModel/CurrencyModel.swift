@@ -11,4 +11,5 @@ import Foundation
 struct CurrencyModel {
   var name: String
   var multiplier: Double
+  var isBase: Bool
 }
